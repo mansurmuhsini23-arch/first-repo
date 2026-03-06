@@ -3,7 +3,7 @@
 using namespace std;
 
     bool isPrime(int x){
-        if(x<=0) return false;
+        if(x<2) return false;
         for(int i=2;i*i<=x;i++){
             if(x%i==0) return false;
         }
@@ -17,8 +17,6 @@ int main(){
             sum+=i;
             count++;
             cout<<setw(5)<<i<<" ";
-        
-
         }
         
     }
@@ -27,4 +25,5 @@ int main(){
    cout<<"sum of prime numbers are "<<sum<<endl;
     return 0;
     
+
 }
